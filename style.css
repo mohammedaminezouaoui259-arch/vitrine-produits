@@ -1,0 +1,186 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0d6efd !important; /* اللون الأزرق ديال Bootstrap */
+  text-transform: uppercase; /* يخليها بحروف كبار */
+  letter-spacing: 1px;       /* شوية فراغ بين الحروف */
+}
+.logo-img {
+  height: 50px;
+  object-fit: contain;
+}
+
+a.text-decoration-none:hover {
+  color: #dc3545 !important;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+
+
+  :root{
+      --bg:#fafafa;
+      --card:#fff;
+      --accent:#2b6cb0;
+      --muted:#7a7a7a;
+      --ring: rgba(43,108,176,0.12);
+      font-family: Inter, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+
+
+
+      .container{
+      width:100%;
+      max-width:1200px;
+      background:var(--card);
+      border-radius:12px;
+      padding:28px;
+      box-shadow:0 6px 18px rgba(20,20,20,0.06);
+    }
+
+    .title-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+    h1{font-size:18px;margin:0;color:#111}
+    .nav-btn{
+      width:44px;height:44px;border-radius:50%;
+      display:inline-grid;place-items:center;
+      background:transparent;border:1px solid #eee;cursor:pointer;
+      transition:all .15s ease;
+    }
+    .nav-btn:hover{transform:translateY(-3px);box-shadow:0 4px 10px rgba(0,0,0,0.06)}
+    .grid{
+      display:grid;
+      gap:20px;
+      grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+      align-items:start;
+    }
+
+    .category{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:12px;
+      padding:10px;
+      text-align:center;
+      cursor:pointer;
+      user-select:none;
+      transition:transform .12s ease;
+    }
+    .category:active{transform:scale(.98)}
+    .circle{
+      width:78px;height:78px;border-radius:50%;
+      display:grid;place-items:center;
+      background:transparent;border:1px solid #e6e6e6;
+      transition:box-shadow .12s ease, background .12s ease, transform .12s ease;
+    }
+    .category:hover .circle{
+      box-shadow: 0 8px 22px var(--ring);
+      transform:translateY(-6px);
+      background:linear-gradient(180deg, rgba(43,108,176,0.06), rgba(43,108,176,0.02));
+      border-color: rgba(43,108,176,0.18);
+    }
+
+    .label{
+      font-size:13px;color:var(--muted);
+      line-height:1.15; max-width:120px;
+      word-break:break-word;
+    }
+
+    /* small screens: center grid items */
+    @media (max-width:520px){
+      .grid{grid-template-columns: repeat(auto-fit, minmax(120px,1fr)); gap:14px;}
+      .circle{width:68px;height:68px}
+      .label{font-size:12px}
+    }
+
+    /* accessible focus style */
+    .circle:focus{
+      outline:3px solid var(--ring);
+      outline-offset:4px;
+    }
+
+
+
+
+
+    .banner-section {
+  position: relative;
+  width: 100%;
+  height: 360px; /* الطول */
+  background: url("images/banner.jpg") center/cover no-repeat; /* ← هنا دير الصورة ديالك */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* طبقة شفافة سوداء */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-section h2, .banner-section p {
+  color: #0a0303;
+}
+
+.banner-section a.btn {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+.banner-section a.btn:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .banner-section {
+    height: 250px;
+  }
+  .banner-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+.banner-section {
+  background: url("image/istockphoto-1365436662-612x612.jpg") center/cover no-repeat;
+}
+
+
+
+
+footer a:hover {
+  color: #dc3545 !important; /* اللون الأحمر ديال hover */
+}
+ footer div {
+    color: #0a0303;
+}
+ footer a{
+    color: #0a0303;
+ }
+
+
+
+
+
+
+
